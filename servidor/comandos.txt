@@ -1,0 +1,29 @@
+** / Comandos servidor
+npm init
+npm i apollo-server
+npm i -D nodemon
+
+** / Para usar el import
+npm i -D @babel/core @babel/cli @babel/node @babel/preset-env
+
+crear .babelrc y poner
+{
+   "presets": [
+	"@babel/preset-env
+   ]
+}
+
+en el package json en scripts poner:
+"start" : "nodemon src/index.js --exec babel-node"
+
+** / para conectar a la base de datos
+npm i mongoose dotenv
+
+** / para hasehar password
+npm i bcryptjs
+
+** / para autenticar al usuari con token
+npm i jsonwebtoken
+npm i @apollo/client node-fetch
+npm i uri
+npm i apollo-link-context
